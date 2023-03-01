@@ -1,28 +1,24 @@
-import './App.css';
+import React from "react";
+import "./App.css";
+import ProjectContainer from "./components/ProjectContainer/ProjectContainer";
+import SkillContainer from "./components/SkillContainer/SkillContainer";
+import TopContainer from "./components/TopContainer/TopContainer";
+import Header from "./components/Header/Header";
+import ExperienceContainer from "./components/ExperienceContainer/ExperienceContainer";
+import Contact from "./components/Contact/Contact";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+    <div className="app">
+      <Header/>
+      <TopContainer/>
+      <SkillContainer />
+      <ProjectContainer />
+      <ExperienceContainer />
+      <Contact />
     </div>
+    
   );
 }
 
